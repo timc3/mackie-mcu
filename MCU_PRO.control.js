@@ -5,7 +5,7 @@ load("mcu_var.js");
 
 host.defineController("Mackie", "MCU PRO", "1.0", "515c9850-28e9-11e2-81c1-0800200c9a66");
 host.defineMidiPorts(1, 1);
-host.defineSysexDiscovery("f0 00 00 66 14 00 f7", "f0 00 00 66 14 01 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? f7");
+host.defineSysexIdentityReply("f0 00 00 66 14 00 f7", "f0 00 00 66 14 01 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? f7");
 
 var isShiftPressed = false;
 var isResetPressed = false;
